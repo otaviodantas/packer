@@ -1,0 +1,28 @@
+target:
+  pack1:
+    name: a
+    path: a
+    packages:
+      - base-layer
+      - first-service
+
+  pack2:
+    name: 1
+    path: a
+    packages:
+      - base-layer
+      - second-service
+
+packages:
+  base-layer:
+    files:
+      - ./requirements.txt
+      - ./requirements-dev.txt
+
+  first-service:
+    files:
+      - ./first-service.py
+
+  second-service:
+    files:
+      - ./second-service.py
